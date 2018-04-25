@@ -1,0 +1,14 @@
+{
+  "name": "SCBrowser",
+  "version": "1.0.0",
+  "description": "electron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shu Kakihana <shu.kakihana@gmail.com> (https://twitter.com/kur0k0ji)",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
