@@ -11,18 +11,10 @@ let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 700,
+    height: 450,
     title: 'Hazuki'
-    //webPreferences: { nodeIntegration: false }
   });
-  /*
-  mainWindow.loadURL(url.format({
-    pathname: 'shinycolors.enza.fun/',
-    protocol: 'https',
-    slashes: true
-  }));
-  */
 
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
