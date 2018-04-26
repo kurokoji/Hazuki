@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset='utf-8' />
     <title>Hazuki</title>
-    <link rel="stylesheet" href="./photon-0.1.2-dist/css/photon.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <link rel='stylesheet' href='./photon-0.1.2-dist/css/photon.min.css'>
+    <link rel='stylesheet' href='./style.css'>
+    <script type='text/javascript' src='./node_modules/jquery/dist/jquery.min.js'></script>
+    <script type='text/javascript' src='./trans.js'></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
 </head>
 <body>
-    <div class="window">
-        <header class="toolbar toolbar-header" style="height:30px;">
-            <div class="toolbar-actions">
-                <div class="btn-group">
-                    <button class="btn btn-default">
-                        <span class="icon icon-home"></span>
+    <div class='window'>
+        <header class='toolbar toolbar-header' style='height:35px;'>
+            <div class='toolbar-actions'>
+                <div class='btn-group'>
+                    <button class='btn btn-default' id='back'>
+                        <span class='icon icon-left-open'></span>
+                    </button>
+                    <button class='btn btn-default'>
+                        <span class='icon icon-right-open' id='forward'></span>
+                    </button>
+                </div>
+                <div class='btn-group'>
+                    <button class='btn btn-default'>
+                        <span class='icon icon-home' id='home'></span>
                     </button>
                 </div>
             </div>
         </header>
-    </div>
-    <div id="webview-wrapper">
-        <webview id="webview" src="https://shinycolors.enza.fun" autosize="on"></webview>
+        <div id='webview-wrapper'>
+            <webview id='webview' src='https://shinycolors.enza.fun' autosize='on'></webview>
+        </div>
     </div>
 </body>
 </html>
