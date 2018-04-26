@@ -11,23 +11,30 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    title: 'SCBrowser',
-    webPreferences: { nodeIntegration: false }
+    title: 'Hazuki'
+    //webPreferences: { nodeIntegration: false }
   });
-
+  /*
   mainWindow.loadURL(url.format({
     pathname: 'shinycolors.enza.fun/',
     protocol: 'https',
     slashes: true
   }));
+  */
 
-  //mainWindow.webContents.openDevTools();
+  mainWindow.loadURL(url.format({
+    pathname: path.join(__dirname, 'index.html'),
+    protocol: 'file:',
+    slashes: true
+  }));
+
+  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', () => {
     mainWindow = null;
   });
 
   mainWindow.on("page-title-updated", () => {
-    mainWindow.setTitle('SCBrowser');
+    mainWindow.setTitle('Hazuki');
   });
 }
 
