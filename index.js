@@ -16,6 +16,8 @@ function createWindow() {
     title: 'Hazuki'
   });
 
+  mainWindow.setMinimumSize(350, 225);
+
   mainWindow.loadURL(url.format({
     pathname: path.join(__dirname, 'index.html'),
     protocol: 'file:',
