@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hazuki</title>
+    <link rel="stylesheet" href="./photon-0.1.2-dist/css/photon.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+</head>
+<body>
+    <div class="window">
+        <header class="toolbar toolbar-header" style="height:30px;">
+            <div class="toolbar-actions">
+                <div class="btn-group">
+                    <button class="btn btn-default">
+                        <span class="icon icon-home"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="webview-wrapper">
+        <webview id="webview" src="https://shinycolors.enza.fun" autosize="on"></webview>
+    </div>
+</body>
+</html>

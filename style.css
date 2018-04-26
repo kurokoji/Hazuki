@@ -1,0 +1,11 @@
+#webview-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+#webview {
+    position: absolute;
+    height: calc(100% - 30px);
+    width: 100%;
+    bottom: 0;
+}
