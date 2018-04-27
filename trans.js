@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const webview = document.getElementById('webview');
 
     const back = document.getElementById('back');
+    const reload = document.getElementById('reload');
     const forward = document.getElementById('forward');
     const home = document.getElementById('home');
     const gasha = document.getElementById('gasha');
@@ -21,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function() {
     back.addEventListener('click', function() {
         webview.goBack();
     }, false);
+
+    reload.addEventListener('click', function() {
+        webview.reload();
+    });
 
     forward.addEventListener('click', function() {
         webview.goForward();
