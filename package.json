@@ -9,7 +9,7 @@
   "author": "Shu Kakihana <shu.kakihana@gmail.com> (https://twitter.com/kur0k0ji)",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^1.8.8"
   },
   "dependencies": {
     "jquery": "^3.3.1"
