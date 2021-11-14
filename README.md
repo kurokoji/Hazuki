@@ -2,6 +2,8 @@
 
 昨日よりもアイドルをプロデュースしたくなるブラウザ。
 
+![](./pic/sample.png)
+
 # 概要
 
 **ダウンロードは[こちら](https://github.com/kurokoji/Hazuki/releases)から。**
